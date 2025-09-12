@@ -1,23 +1,19 @@
-#ifndef ALUMNO_H
-#define ALUMNO_H
-
-#include <string>
-using std::string;
+#pragma once
+#include <iostream>
+using namespace std;
 
 class Alumno {
 public:
-    string id;        
+    string id;
     string nombre;
     string apellido;
     string carrera;
     string fechaIngreso;
 
-    Alumno* siguiente; // Aqui debe ir mi lista enlazada para la clase Alumno
+    Alumno* siguiente;
 
-    Alumno(const string& id_, const string& nombre_, const string& apellido_,
-           const string& carrera_, const string& fechaIngreso_)
-        : id(id_), nombre(nombre_), apellido(apellido_), carrera(carrera_),
-          fechaIngreso(fechaIngreso_), siguiente(nullptr) {}
+    Alumno(string id_, string nombre_, string apellido_,
+           string carrera_, string fechaIngreso_);
+
+    void mostrar();
 };
-
-#endif // ALUMNO_H

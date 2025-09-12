@@ -6,7 +6,8 @@ public:
     double valor;
     Nota* siguiente;
 
-    Nota(double valor_) : valor(valor_), siguiente(nullptr) {}
+    Nota(double valor_);
+    void mostrar();
 };
 
 #endif // NOTA_H

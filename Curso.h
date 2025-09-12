@@ -12,12 +12,12 @@ public:
     string carrera;
     string profesor;
 
-    Curso* siguiente; // Aqui debe ir mi lista enlazada para la clase Curso
+    Curso* siguiente;
 
-    Curso(const string& codigo_, const string& nombre_, int maxEstudiantes_,
-          const string& carrera_, const string& profesor_)
-        : codigo(codigo_), nombre(nombre_), maximoEstudiantes(maxEstudiantes_),
-          carrera(carrera_), profesor(profesor_), siguiente(nullptr) {}
+    Curso(string codigo_, string nombre_, int maxEstudiantes_,
+          string carrera_, string profesor_);
+
+    void mostrar();
 };
 
 #endif // CURSO_H

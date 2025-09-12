@@ -7,14 +7,15 @@ using std::string;
 
 class Inscripcion {
 public:
-    string idAlumno;    // referencia al Alumno
-    string codigoCurso; // referencia al Curso
-    Nota* notas;        // lista enlazada de notas
+    string idAlumno;
+    string codigoCurso;
+    Nota* notas;
 
     Inscripcion* siguiente;
 
-    Inscripcion(const string& idAlumno_, const string& codigoCurso_)
-        : idAlumno(idAlumno_), codigoCurso(codigoCurso_), notas(nullptr), siguiente(nullptr) {}
+    Inscripcion(string idAlumno_, string codigoCurso_);
+    void agregarNota(double valor);
+    void mostrar();
 };
 
 #endif // INSCRIPCION_H
