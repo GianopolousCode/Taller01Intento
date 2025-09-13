@@ -7,4 +7,4 @@ g++ Alumno.cpp Curso.cpp Inscripcion.cpp Nota.cpp Sistema.cpp main.cpp -o progra
 
 Integrantes: Gian Guzman Ortiz
 gian.guzman@alumnos.ucn.cl
-21.123.660-4
+Paralelo c2 -> Prof. Bastian ruiz
